@@ -66,11 +66,9 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-				<url>http://localhost:8080/manager/text</url>
+		    <url>http://3.135.187.237:8085/manager/text</url>
                     <server>apache-tomcat</server>
-                  <username>admin</username>
-                  <password>admin</password>
-				  <path>/myweb-app</path>
+                    <path>/mySimpleWeb-app</path>
 				                     
                 </configuration>
             </plugin>
