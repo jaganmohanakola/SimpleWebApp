@@ -43,10 +43,10 @@ appBackUp()
 {
  echo "inside app Back up func"
  sleep 10
- if [ -f /opt/tomcat/webapps/*.war ]
+ if [ -f /opt/tomcat/webapps/simpleWebApp.war ]
  then
  echo "file exists so please take backup"
- cp /opt/tomcat/webapps/simpleWebApp.war /root/myBackUp/
+ cp /opt/tomcat/webapps/*.war /root/myBackUp/
  echo "file moved to back up diecctory"
  else
  echo "fnf so can not take back up"
