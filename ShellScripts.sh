@@ -1,4 +1,6 @@
 #!/bin/bash
+appDeploy()
+{
 export MAVEN_HOME=/opt/maven
 export PATH=$PATH:$MAVEN_HOME/bin
 
@@ -13,3 +15,5 @@ mvn tomcat7:deploy
 else
 echo "pom file does not exists please check"
 fi
+}
+appDeploy
