@@ -58,10 +58,10 @@ appDeploy()
  startTomcat
  appBackUp
  echo "strat deploying the war file"
- if [ -f /var/lib/jenkins/workspace/SimpleWebApp/pom.xml ]
+ if [ -f /var/lib/jenkins/workspace/MySimpleWebApp/pom.xml ]
  then
  echo "pom file exists and ready to deploy"
- cd /var/lib/jenkins/workspace/SimpleWebApp
+ cd /var/lib/jenkins/workspace/MySimpleWebApp
  mvn tomcat7:deploy
  else
  echo "pom file does not exists please check"
@@ -79,7 +79,7 @@ appUnDeploy()
  if [ -f /opt/tomcat/webapps/simpleWebApp.war ]
  then 
   echo "war file exists so you can start undeploy"
- cd  /var/lib/jenkins/workspace/SimpleWebApp/
+ cd  /var/lib/jenkins/workspace/MySimpleWebApp/
  echo "going to undeploy"
  mvn tomcat7:undeploy
  else
@@ -98,10 +98,10 @@ appReDeploy()
  if netstat -lntp | grep 8085
  then
  echo "tomcat is running"
- if [ -f /var/lib/jenkins/workspace/SimpleWebApp/pom.xml ]
+ if [ -f /var/lib/jenkins/workspace/MySimpleWebApp/pom.xml ]
  then
  echo "pom file exists going to the path directory and doing redeploy"
- cd /var/lib/jenkins/workspace/SimpleWebApp/
+ cd /var/lib/jenkins/workspace/MySimpleWebApp/
  echo "going torun command  redeploy"
  mvn tomcat7:redeploy
  echo "redeploy command executed"
