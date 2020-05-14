@@ -73,7 +73,7 @@ appUnDeploy()
  if netstat -lntp | grep 8085
  then
  echo "tomcat is running, can do undeploy"
- if [ -f /var/lib/jenkins/workspace/SimpleWebApp/pom.xml ]
+ if [ -f /var/lib/jenkins/workspace/MySimpleWebApp/pom.xml ]
  then
  echo "pom file exists doing undeploy by going to the path"
  if [ -f /opt/tomcat/webapps/simpleWebApp.war ]
