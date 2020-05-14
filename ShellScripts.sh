@@ -42,6 +42,7 @@ startTomcat()
 appBackUp()
 {
  echo "inside app Back up func"
+ sleep 10
  if [ -f /opt/tomcat/webapps/*.war ]
  then
  echo "file exists so please take backup"
