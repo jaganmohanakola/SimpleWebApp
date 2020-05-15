@@ -25,7 +25,7 @@
 				<configuration> 
 					<url>http://18.189.192.74:8085/manager/text</url> 
 					<server>apache-tomcat</server> 
-					<path>/simpleWebApp</path> 
+					<path>/SimpleWebApp</path> 
 				</configuration> 
 			</plugin>
 		</plugins>
