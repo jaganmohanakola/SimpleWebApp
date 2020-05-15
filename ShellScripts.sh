@@ -64,7 +64,7 @@ appDeploy()
  then
  echo "pom file exists and ready to deploy"
  cd /var/lib/jenkins/workspace/MySimpleWebApp
- mvn tomcat7:deploy
+ mvn clean tomcat7:deploy
  else
  echo "pom file does not exists please check"
  fi
