@@ -53,8 +53,8 @@ appDeploy()
  startTomcat
  appBackUp
  echo "strat deploying the war file"
- # if [ -f /root/myRepository/SimpleWebApp/pom.xml ]
-  if [ -f /root/myRepository/MyEcomm/pom.xml ]
+ if [ -f /var/lib/jenkins/workspace/MyfirstMavenTest/pom.xml ]
+ # if [ -f /root/myRepository/MyEcomm/pom.xml ]
  then
  echo "pom file exists and ready to deploy"
  cd /root/myRepository/SimpleWebApp
@@ -78,7 +78,8 @@ appUnDeploy()
  if netstat -lntp | grep 8085
  then
  echo "tomcat is running, can do undeploy"
- if [ -f /root/myRepository/SimpleWebApp/pom.xml ]
+ if [ -f /var/lib/jenkins/workspace/MyfirstMavenTest/pom.xml ]
+ # if [ -f /root/myRepository/SimpleWebApp/pom.xml ]
  # if [ -f /root/myRepository/MyEcomm/pom.xml ]
  then
  
