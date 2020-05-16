@@ -57,7 +57,7 @@ appDeploy()
  # if [ -f /root/myRepository/MyEcomm/pom.xml ]
  then
  echo "pom file exists and ready to deploy"
- cd /root/myRepository/SimpleWebApp
+ cd /var/lib/jenkins/workspace/MyfirstMavenTest
  # cd /root/myRepository/MyEcomm
  
  if [ -f /opt/tomcat/webapps/SimpleWebApp.war ]
@@ -89,7 +89,7 @@ appUnDeploy()
  if [ -f /opt/tomcat/webapps/SimpleWebApp.war ]
  then 
   echo "war file exists so you can start undeploy"
-  cd  /root/myRepository/SimpleWebApp/
+  cd  /var/lib/jenkins/workspace/MyfirstMavenTest
  # cd /root/myRepository/MyEcomm
  echo "going to undeploy"
  mvn tomcat7:undeploy
@@ -110,13 +110,13 @@ appReDeploy()
  then
  echo "tomcat is running"
  # if [ -f /root/myRepository/SimpleWebApp/pom.xml ]
- if [ -f /root/myRepository/MyEcomm/pom.xml ]
+ if [ -f /var/lib/jenkins/workspace/MyfirstMavenTest/pom.xml ]
  
  #  if [ -f /root/myRepository/PetClinic/pom.xml ]
  then
  echo "pom file exists going to the path directory and doing redeploy"
  # cd /root/myRepository/SimpleWebApp
- cd /root/myRepository/MyEcomm
+ cd /var/lib/jenkins/workspace/MyfirstMavenTest
  
  # cd /root/myRepository/PetClinic
  echo "going torun command  redeploy"
