@@ -41,7 +41,7 @@ appBackUp()
  if [ -f /opt/tomcat/webapps/*.war ]
  then
  echo "file exists so please take backup"
- cp -r /opt/tomcat/webapps/*.war ./myBackUp/
+ cp -r /opt/tomcat/webapps/*.war /root/myBackUp/
  echo "file moved to back up diecctory"
  else
  echo "fnf so can not take back up"
